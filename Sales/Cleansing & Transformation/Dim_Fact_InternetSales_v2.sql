@@ -4,11 +4,11 @@ SELECT
   [OrderDateKey], 
   [DueDateKey], 
   [ShipDateKey], 
-  [CustomerKey] 
+  [CustomerKey], 
   -- ,[PromotionKey]
   -- ,[CurrencyKey]
   -- ,[SalesTerritoryKey]
-  [SalesOrderNumber] 
+  [SalesOrderNumber], 
   --  ,[SalesOrderLineNumber]
   --  ,[RevisionNumber]
   --  ,[OrderQuantity]
@@ -18,8 +18,7 @@ SELECT
   -- ,[DiscountAmount]
   --   ,[ProductStandardCost]
   --   ,[TotalProductCost]
-  , 
-  [SalesAmount] 
+  [SalesAmount]
   --   ,[TaxAmt]
   --   ,[Freight]
   --   ,[CarrierTrackingNumber]
@@ -30,4 +29,4 @@ SELECT
 FROM 
   [dbo].[FactInternetSales] 
 WHERE 
-  LEFT (OrderDateKey, 4) >= Year(GETDATE() ) -2 -- Get Current Date minus two years
+  LEFT (OrderDateKey, 4) >= Year( GETDATE())-2 -- Get Current Date minus two years

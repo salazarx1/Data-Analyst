@@ -4,7 +4,7 @@ SELECT
   -- ,[GeographyKey]
   --   ,[CustomerAlternateKey]
   --  ,[Title]
-  c.firstname AS [First_Name], 
+  c.firstname AS [First Name], 
   -- ,[MiddleName]
   c.lastname AS [Last Name], 
   c.firstname + '' + lastname AS [Full Name],   -- Combined First and Last name
@@ -28,7 +28,7 @@ SELECT
   --  ,[AddressLine1]
   -- ,[AddressLine2]
   --   ,[Phone]
-  c.datefirstpurchase AS DateFristPurchase, 
+  c.datefirstpurchase AS DateFirstPurchase, 
   --   ,[CommuteDistance]
   g.city AS [Customer City] -- Joined in Customer City from Geography Table
 FROM 
