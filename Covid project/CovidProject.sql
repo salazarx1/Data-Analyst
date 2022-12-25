@@ -1,5 +1,8 @@
 USE PortfolioProject;
 SELECT *
+FROM CovidDeaths
+ORDER BY Location
+SELECT *
 FROM PortfolioProject..CovidDeaths
 WHERE continent IS NOT NULL
 ORDER BY location,  date
